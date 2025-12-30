@@ -1,0 +1,23 @@
+How to run
+
+    Install dependencies:
+
+        pip install transformers datasets torch psutil numpy tqdm
+
+        Optional for CSV export: pip install pandas
+
+    Example commands:
+
+        xquad (English subset):
+
+            python benchmark_smollm3.py --model HuggingFaceTB/SmolLM3-3B-Instruct --dataset xquad --dataset_config xquad.en  --mode think --device cuda --limit 100
+
+        mlqa (English QA):
+
+            python benchmark_smollm3.py --dataset mlqa --dataset_config mlqa.en.en  --mode no_think --device cpu --limit 50
+
+        gsm8k:
+
+            python benchmark_smollm3.py --dataset gsm8k --mode think --device cuda --limit 50 --max_new_tokens 128
+
+Outputs will be saved under the “outputs” directory: summary.json  plus predictions.jsonl  (and predictions.csv  if pandas is installed).
