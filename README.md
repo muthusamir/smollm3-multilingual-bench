@@ -1,2 +1,22 @@
-# smollm3-multilingual-bench
-Deployable Python script for benchmarking SmolLM3 on multilingual QA datasets with EM, F1, and REI metrics;  Benchmarking SmolLM3 across XQuAD, MLQA, and GSM8K with reproducible evaluation and resource profiling;  Evaluate SmolLM3 performance on multilingual QA tasks with exact match, F1, inference time, and memory usage.
+# SmolLM3 Benchmark
+
+Deployable Python script for benchmarking **SmolLM3** on multilingual QA datasets (XQuAD, MLQA, GSM8K).  
+Evaluates models with **Exact Match (EM)**, **F1**, inference time, memory usage, and a custom **Resource Efficiency Index (REI)**.
+
+---
+
+## ✨ Features
+- Benchmark Hugging Face models on multilingual QA datasets
+- Supports reasoning modes: `think` vs `no_think`
+- Tracks EM, F1, inference time, memory usage
+- Computes REI (Resource Efficiency Index)
+- Saves results to JSON/CSV for easy analysis
+- Works on both CPU and GPU
+
+---
+
+## 📦 Requirements
+Install dependencies with pip:
+
+```bash
+pip install transformers datasets torch psutil numpy tqdm
