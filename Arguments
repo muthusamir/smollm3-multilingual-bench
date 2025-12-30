@@ -1,0 +1,27 @@
+Arguments
+
+    --model : Hugging Face model name (default: HuggingFaceTB/SmolLM3-3B-Instruct)
+
+    --dataset : Dataset (xquad, mlqa, gsm8k)
+
+    --dataset_config : Dataset config/language (e.g., xquad.en, mlqa.en.en)
+
+    --split : Dataset split (default: validation for xquad/mlqa, test for gsm8k)
+
+    --mode : Reasoning mode (think or no_think)
+
+    --device : cuda or cpu
+
+    --limit : Number of examples to evaluate
+
+    --max_new_tokens : Max tokens to generate (default: 64)
+
+    --temperature : Sampling temperature (default: 0.0)
+
+    --top_p : Nucleus sampling (default: 1.0)
+
+    --seed : Random seed (default: 42)
+
+    --save_dir : Directory to save results (default: outputs)
+
+    --no_save_predictions : Skip saving per-example predictions
