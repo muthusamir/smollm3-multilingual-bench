@@ -1,0 +1,7 @@
+python benchmark_smollm3.py \
+  --model HuggingFaceTB/SmolLM3-3B-Instruct \
+  --dataset xquad \
+  --dataset_config xquad.en \
+  --mode think \
+  --device cuda \
+  --limit 100
